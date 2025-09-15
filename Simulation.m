@@ -56,20 +56,14 @@ for k = 1:K
 end
 e2 = mean(e2Record);
 %%%%%%%%%%%%%%%%%%%
-e3Record = [];
+(* e3Record = [];
 for k = 1:K-1
     e3Record = [e3Record, RecordEdges(k)*RecordEdges(k+1)];
 end
-e3 = mean(e3Record) - e1^2; 
+e3 = mean(e3Record) - e1^2;  *)
 %%%%%%%%%%%%%%%%%%%
 e4Record = [];
 for k = 1:K-1
     e4Record = [e4Record, (RecordEdges(k+1)-RecordEdges(k))^2];
 end
 e4 = mean(e4Record); 
-
-% e5Record = [];
-% for k = 1:K-1
-%     e5Record = [e5Record, RecordEdges(k+1)-RecordEdges(k)];
-% end
-% e5 = mean(e5Record); 
